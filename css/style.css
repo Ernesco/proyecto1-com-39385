@@ -277,13 +277,19 @@ form{
     margin: 10px;
 }
 
-/* Recetas alcohol bajo*/
+/* Codigos con Grid*/
 
 .grid{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+.grid2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 .img1{
     grid-column: 1/2;
@@ -309,14 +315,21 @@ form{
     grid-column: 3/4;
     grid-row: 2/3;
 }
+.img7{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
 .img1 img{
     width: 315px;
+    margin-top: 20px;
 }
 .img2 img{
     width: 345px;
+    margin-top: 20px;
 }
 .img3 img{
     width: 350px;
+    margin-top: 20px;
 }
 .img4 img{
     width: 345px;
@@ -325,6 +338,9 @@ form{
     width: 345px;
 }
 .img6 img{
+    width: 350px;
+}
+.img7 img{
     width: 350px;
 }
 .img1 h2{
@@ -357,6 +373,11 @@ form{
     padding: 0px;
     border: 0px;
 }
+.img7 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 .img1 a{
     text-decoration: none;
     color: white;
@@ -378,6 +399,10 @@ form{
     color: white;
 }
 .img6 a{
+    text-decoration: none;
+    color: white;
+}
+.img7 a{
     text-decoration: none;
     color: white;
 }

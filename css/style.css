@@ -49,13 +49,13 @@ h3{
 
 /* aca esta el NAV */
 
-.navbar{
+.navbar ul{
     display: flex;
 }
 .navbar li a{
     text-decoration: none;
     color: white;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 .navbar a:hover{
     color:blueviolet;

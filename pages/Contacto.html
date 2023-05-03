@@ -5,34 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulebard - Recetas de Cocteles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-nav">
-            <a href="../index.html"><img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
-            <h5>Boulebard <br> Receta de Cocteles</h5></a>
+    <header class="container-fluid">
+        <div class="d-flex align-items-center text-decoration-none">
+                <a href="../index.html" class="d-flex align-items-center justify-content-evenly text-white text-decoration-none"><img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
+                <h5 >Boulebard <br> Receta de Cocteles</h5></a>
+            <nav>
+                <ul class="d-flex justify-content-evenly align-items-center">
+                    <li class="d-flex justify-evenly me-5"><a href="./cocteleria.html" class="text-white text-decoration-none">Kits de Cocteleria</a></li>
+                    <li class="d-flex justify-evenly me-5"><a href="./sin-alcohol.html" class="text-white text-decoration-none">Coctel Sin Alcohol</a></li>
+                    <li class="d-flex justify-evenly me-5"><a href="./alcohol-bajo.html" class="text-white text-decoration-none">Coctel Alcohol Bajo</a></li>
+                    <li class="d-flex justify-evenly me-5"><a href="./alcohol-medio.html" class="text-white text-decoration-none">Coctel Alcohol Medio</a></li>
+                    <li class="d-flex justify-evenly me-5"><a href="./alcohol-alto.html" class="text-white text-decoration-none">Coctel Alcohol Alto</a></li>
+                </ul>    
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./cocteleria.html">Kits de Cocteleria</a></li>
-                <li><a href="./sin-alcohol.html">Coctel Sin Alcohol</a></li>
-                <li><a href="./alcohol-bajo.html">Coctel Alcohol Bajo</a></li>
-                <li><a href="./alcohol-medio.html">Coctel Alcohol Medio</a></li>
-                <li><a href="./alcohol-alto.html">Coctel Alcohol Alto</a></li>
-            </ul>    
-        </nav>
     </header>   
     <Main>
-        <div class="contactos">
-            <h1 class="sombra">Contacto</h1>
-        </div>
-        <hr>
-        <h2>Contactanos</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iusto quis expedita sapiente, incidunt suscipit minus dolore reiciendis odit. Soluta delectus laudantium eligendi, voluptatem aperiam consectetur placeat explicabo voluptas similique!</p>
+        <div>
+            <div class="contactos">
+                <h1 class="sombra">Contacto</h1>
+            </div>
+            <hr>
+                <h2>Contactanos</h2>
+                <p>ingresa tus datos y consulta o motivo por el cual te queres contactar con nosotros.</p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ingresa tu nombre</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresar">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">ingresa tu consulta o motivo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
     </Main>
         <footer>
             <hr>
@@ -49,12 +62,12 @@
                 </div>
             </section>
             <section>
-                <div class="enlaces">
-                    <a href="../index.html">Inicio</a>
-                    <a href="#">Contactos</a>
+                <div class="d-flex justify-content-evenly">
+                    <a href="../index.html" class="text-white">Inicio</a>
+                    <a href="#" class="text-white">Contactos</a>
                     <img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
-                    <a href="Nosotros.html">Nosotros</a>
-                    <a href="Sugerir.html">Sugerir</a>
+                    <a href="Nosotros.html" class="text-white">Nosotros</a>
+                    <a href="Sugerir.html" class="text-white">Sugerir</a>
                 </div>
             </section>
             <section>
@@ -69,5 +82,7 @@
                 </div>
             </section>
         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>

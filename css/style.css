@@ -856,6 +856,7 @@ footer{
         flex-direction: column;
         align-items: center;
         font-size: 8px;
+    }
 }
 @media(width:375px){
     .grid{

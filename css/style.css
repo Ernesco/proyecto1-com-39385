@@ -103,12 +103,13 @@ ol{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align:start;
     flex-direction: column;
-    height: 80vh;
-    padding-left: 120px;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/FK4QPwhh/barra1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .barra{
     display: flex;
@@ -116,8 +117,8 @@ ol{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 80vh;
-    padding-left: 120px;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/TYNw4dsf/barman3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -398,7 +399,7 @@ form{
     color: white;
 }
 
-/* Cubalibre receta */
+/* RECETAS */
 .nav{
     width: 100%;
     height: 100vh;
@@ -503,6 +504,7 @@ footer{
 
 
 /*     Aca comienza el MEDIA     */
+
 @media(max-width:1024px){
     .barra{
         align-items: center;
@@ -511,12 +513,12 @@ footer{
     }
     .copa-barra{
         align-items: center;
-        padding-left: 50px;
         height: 80vh;
+        background-position: center center;
     }
 }
 
-@media(max-width:768px){
+@media(max-width:986px){
     header{
         flex-direction: row;
         align-items: center;
@@ -589,7 +591,7 @@ footer{
     }
 }
 
-@media(max-width:425px){
+@media(max-width:690px){
     header{
         flex-direction: column;
         align-items: center;

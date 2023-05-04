@@ -837,7 +837,7 @@ footer{
         align-items: center;
     }
 }
-@media(max-width:768px){
+@media(max-width:856px){
     header {
         flex-direction: column;
         align-items: center;
@@ -845,6 +845,12 @@ footer{
     .grid{
         display: flex;
         flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: 12px;
     }
 }
 @media(max-width:475px){
@@ -857,6 +863,12 @@ footer{
         align-items: center;
         font-size: 8px;
     }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 20px;
+    }
 }
 @media(width:375px){
     .grid{
@@ -868,15 +880,21 @@ footer{
         align-items: center;
         font-size: 8px;
     }    
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
 }
 @media(max-width: 320px){
     header {
         flex-direction: column;
         align-items: center;
     }
-    .navbar li a{
+    .navbar{
+        display: flex;
         flex-direction: column;
-        align-items: center;
         font-size: 8px;
     }
     .logo-nav img{
@@ -885,5 +903,11 @@ footer{
     .grid{
         display: flex;
         flex-direction:  column;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
     }
 }

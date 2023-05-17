@@ -1,0 +1,923 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cinzel', serif;
+    color: white;
+    background-color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #0e1011;
+}
+hr{
+    margin: 15px;
+}
+div{
+    text-align: center;
+}
+p{
+    margin: 20px;
+    text-align: center;
+}
+h1{
+    font-size: 120px;
+    line-height: 1px;
+    letter-spacing: 10px;
+    margin: 2%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    border: 10px;
+    margin: 5px;
+}
+h3{
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 1%;
+}
+ol{
+    list-style: none;
+}
+
+/* aca esta el NAV */
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+.navbar a:hover{
+    color:blueviolet;
+}
+.logo-nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.logo-nav img{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin: 5px;
+}
+.inicio{
+    display: flex;
+    gap: 30px;
+    padding-left: 5px;
+}
+.inicio li a{
+    text-decoration: none;
+    color: white;
+}
+.inicio a:hover{
+    color:blueviolet;
+}
+.logo-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: url(https://i.postimg.cc/rsQmcMFG/barman2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.copa-barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:start;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/FK4QPwhh/barra1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/TYNw4dsf/barman3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-main img{
+    margin: 10px;
+}
+.quienes-somos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.herramientas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.boton-ingresar a{
+    padding: 10px;
+    border: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+.figuras{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* banner HTML enlaces */
+
+.sombra{
+    text-transform: lowercase;
+    text-shadow: 5px 5px 0 rgb(0, 0, 0);
+}
+.sombra-1{
+    text-transform: lowercase;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+}
+.sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: url(https://i.postimg.cc/QN4hX6Jq/sinalcoholbanner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bajo-banner{
+    background-image: url(https://i.postimg.cc/y8Jd4qq9/bajobanner1.jpg);
+}
+.medio-banner{
+    background-image: url(https://i.postimg.cc/fbnMGJfn/mediobanner1.jpg);
+}
+.alto-banner{
+    background-image: url(https://i.postimg.cc/X7YqLGQs/altobanner1.jpg);
+}
+.herramientas-banner{
+    background-image: url(https://i.postimg.cc/MZdKnZqV/herramientasbanner1.jpg);
+}
+.barra-inicio{
+    display: flex;
+}
+.sugerencias, .contactos, .nosotros{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: url(https://i.postimg.cc/fTVZkxHQ/barra41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactos{
+    background-image: url(https://i.postimg.cc/P5Bqd6h7/barra2.jpg);
+}
+.nosotros{
+    background-image: url(https://i.postimg.cc/yNyC2nNc/barman1.png);
+}
+
+/* FOTTER */
+
+footer{
+    background-color: #0e1011;
+}
+.beber{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+
+}
+.novedades p{
+    text-align: center;
+    line-height: 1px;
+    padding: 10px;
+    border: 10px;
+    margin: 0px;
+}
+form{
+    text-align: center;
+    padding: 10px;
+    border: 10px;
+    margin: 5px;
+}
+.enlaces img{
+    height: 50px;
+}
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.enlaces a{
+    text-decoration: none;
+    color: white;
+}
+.enlaces a:hover{
+    color:blueviolet;
+}
+.redes p{
+    font-size: 12px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.face{
+    width: 30px;
+    margin: 10px;
+}
+.insta{
+    width: 30px;
+    margin: 10px;
+}
+.tik{
+    width: 30px;
+    margin: 10px;
+}
+
+/* Codigos con Grid*/
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.grid2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.img1{
+    grid-column: 1/2;
+}
+.img2{
+    grid-column: 2/3;
+}
+.img3{
+    grid-column: 3/4;
+}
+.img4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.img5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.img6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.img7{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.img1 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img2 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img3 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img4 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img5 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img6 img{
+    width: 315px;
+    margin-top: 20px;
+}
+.img7 img{
+    width: 350px;
+    margin-top: 20px;
+}
+.img1 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img2 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img3 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img4 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img5 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img6 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img7 h2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.img1 a{
+    text-decoration: none;
+    color: white;
+}
+.img2 a{
+    text-decoration: none;
+    color: white;
+}
+.img3 a{
+    text-decoration: none;
+    color: white;
+}
+.img4 a{
+    text-decoration: none;
+    color: white;
+}
+.img5 a{
+    text-decoration: none;
+    color: white;
+}
+.img6 a{
+    text-decoration: none;
+    color: white;
+}
+.img7 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* RECETAS */
+
+.nav{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+}
+.nav-recetas ul{
+    list-style: none;
+    padding-top: 100px;
+}
+.nav-recetas li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    display: list-item;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.nav-recetas a{
+    text-decoration: none;
+    color: white;
+}
+.nav-recetas a:hover{
+    color: blueviolet;
+}
+.imagenreceta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.grid-madre{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "header main"
+    "header main"
+    "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.gridreceta{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+.grid-subtitulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 50px;
+}
+.grid-parrafo1{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 20px;
+}
+.grid-parrafo2{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.grid-parrafo3{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-size: 20px;
+}
+.grid-lista1{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    list-style: none;
+}
+.grid-parrafo4{
+    grid-column: 2/3;
+    grid-row: 7/8;
+    font-size: 20px;
+}
+.grid-lista2{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    padding-bottom: 30px;
+}
+
+
+/*     Aca comienza el MEDIA     */
+
+    /* Media INDEX */
+
+@media(max-width:1024px){
+    .barra{
+        align-items: center;
+        padding-left: 50px;
+        height: 80vh;
+    }
+    .copa-barra{
+        align-items: center;
+        height: 80vh;
+        background-position: center center;
+    }
+}
+
+@media(max-width:986px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+    }
+    .logo-nav img{
+        height: 40px;
+    }
+    .logo-main img{
+        height: 90px;
+    }
+    .logo-main{
+        height: 60vh;
+    }
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 40px;
+        height: 60vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 40px;
+        height: 60vh;
+    }
+    .figuras{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+    }
+    .figuras figure img{
+        height: 300px;
+    }
+    .figuras figcaption{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .novedades p{
+        font-size: 15px;
+        padding: 10px;
+        border: 8px;
+        margin: 0px;
+    }
+    .novedades form input{
+        font-size: 12px;
+    }
+    .novedades form{
+        font-size: 12px;
+    }
+    .enlaces{
+        flex-direction: row;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:690px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    .logo-nav img{
+        height: 40px;
+    }
+    .logo-main img{
+        height: 70px;
+    }
+    .logo-main{
+        height: 30vh;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 45px;
+        height: 30vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 45px;
+        height: 30vh;
+    }
+    .figuras{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+    }
+    .figuras figure img{
+        height: 200px;
+    }
+    .figuras figcaption{
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
+    .novedades p{
+        font-size: 10px;
+        padding: 5px;
+        border: 5px;
+        margin: 0px;
+    }
+    .novedades form input{
+        font-size: 10px;
+    }
+    .novedades form{
+        font-size: 10px;
+    }
+    .enlaces{
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:375px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: 12px;
+    }
+    .logo-nav img{
+        height: 35px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .boton-ingresar a{
+        padding: 5px;
+        border: 2px;
+        margin: 5px;
+    }
+    .figuras{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+    }
+    .figuras figure img{
+        height: 200px;
+    }
+    .figuras figcaption{
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
+    .novedades p{
+        font-size: 8px;
+        padding: 5px;
+        border: 5px;
+        margin: 0px;
+    }
+    .novedades form input{
+        font-size: 10px;
+    }
+    .novedades form{
+        font-size: 10px;
+    }
+    .enlaces{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 35px;
+        height: 25vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 35px;
+        height: 25vh;
+    }
+    .logo-main{
+        height: 30vh;
+    }
+    .logo-main img{
+        height: 50px;
+    }
+    
+}
+@media(max-width:320px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: 12px;
+    }
+    .logo-nav img{
+        height: 35px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .boton-ingresar a{
+        padding: 5px;
+        border: 2px;
+        margin: 5px;
+    }
+    .figuras{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+    }
+    .figuras figure img{
+        height: 200px;
+    }
+    .figuras figcaption{
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
+    .novedades p{
+        font-size: 8px;
+        padding: 5px;
+        border: 5px;
+        margin: 0px;
+    }
+    .novedades form input{
+        font-size: 10px;
+    }
+    .novedades form{
+        font-size: 10px;
+    }
+    .enlaces{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 15px;
+        height: 25vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 15px;
+        height: 25vh;
+    }
+    .logo-main{
+        height: 30vh;
+    }
+    .logo-main img{
+        height: 50px;
+    }
+}
+    /* Media tipos de alcohol */
+
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:856px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: 12px;
+    }
+}
+@media(max-width:475px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+@media(width:375px){
+    .grid{
+        display: flex;
+        flex-direction:  column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+@media(max-width: 320px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .logo-nav a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-nav img{
+        height: 35px;
+    }
+    .grid{
+        display: flex;
+        flex-direction:  column;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}

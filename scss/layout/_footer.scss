@@ -1,0 +1,60 @@
+footer{
+    background-color: #0e1011;
+    .beber{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 12px;
+    }
+    .novedades p{
+        text-align: center;
+        line-height: 1px;
+        padding: 10px;
+        border: 10px;
+        margin: 0px;
+    }
+    form{
+        text-align: center;
+        padding: 10px;
+        border: 10px;
+        margin: 5px;
+    }
+    .enlaces{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+            img{
+                height: 50px;
+            }
+                a{
+                    text-decoration: none;
+                    color: white;
+                        &:hover{ 
+                            color:blueviolet;
+            }
+        }
+    }    
+    .redes{ 
+        display:flex;
+        justify-content: center;
+        .face{
+            width: 30px;
+            margin: 10px;
+        }
+        .insta{
+            width: 30px;
+            margin: 10px;
+        }
+        .tik{
+            width: 30px;
+            margin: 10px;
+        }
+    }
+    p{
+        font-size: 12px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

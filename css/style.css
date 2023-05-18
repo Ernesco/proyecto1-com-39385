@@ -168,3 +168,39 @@ footer {
     font-size: 12px;
     margin-top: 0;
     padding-top: 0; }
+
+/* Pages */
+.sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url(https://i.postimg.cc/QN4hX6Jq/sinalcoholbanner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bajo-banner {
+  background-image: url(https://i.postimg.cc/y8Jd4qq9/bajobanner1.jpg); }
+
+.medio-banner {
+  background-image: url(https://i.postimg.cc/fbnMGJfn/mediobanner1.jpg); }
+
+.alto-banner {
+  background-image: url(https://i.postimg.cc/X7YqLGQs/altobanner1.jpg); }
+
+.herramientas-banner {
+  background-image: url(https://i.postimg.cc/MZdKnZqV/herramientasbanner1.jpg); }
+
+.recetas {
+  display: flex; }
+  .recetas img {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px; }
+  .recetas a {
+    text-decoration: none;
+    color: white; }
+  .recetas h6 {
+    text-align: center; }

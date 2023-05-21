@@ -27,14 +27,14 @@ header {
       height: 50px;
       align-items: center;
       margin: 5px; }
-  header nav ul {
+  header .navbar ul {
     display: flex;
     list-style: none; }
-    header nav ul li a {
+    header .navbar ul li a {
       text-decoration: none;
       color: white;
       padding-right: 20px; }
-      header nav ul li a:hover {
+      header .navbar ul li a:hover {
         color: blueviolet; }
 
 .logo-main {
@@ -43,10 +43,11 @@ header {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  width: none;
   height: 70vh;
-  background-image: url(https://i.postimg.cc/rsQmcMFG/barman2.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url(https://i.postimg.cc/rsQmcMFG/barman2.jpg); }
   .logo-main img {
     margin: 10px; }
 
@@ -71,7 +72,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   background-image: url(https://i.postimg.cc/TYNw4dsf/barman3.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -97,8 +98,8 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: start;
-  height: 100vh;
-  background-image: url(https://i.postimg.cc/FK4QPwhh/barra1.jpg);
+  height: 60vh;
+  background-image: url(https://i.postimg.cc/jdHyWgS6/cocteleria-curso.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -120,6 +121,8 @@ p {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 20px; }
+  .figuras .card1:hover, .figuras .card2:hover, .figuras .card3:hover, .figuras .card4:hover {
+    transform: scale(1.1); }
 
 footer {
   background-color: #0e1011; }
@@ -176,10 +179,25 @@ footer {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  width: none;
   height: 70vh;
-  background-image: url(https://i.postimg.cc/QN4hX6Jq/sinalcoholbanner1.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url(https://i.postimg.cc/QN4hX6Jq/sinalcoholbanner1.jpg);
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .bajo-banner {
   background-image: url(https://i.postimg.cc/y8Jd4qq9/bajobanner1.jpg); }
@@ -211,13 +229,134 @@ h3 {
   text-shadow: 3px 3px 0 black; }
 
 .recetas {
-  display: flex; }
+  display: grid;
+  width: 100%;
+  height: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: none; }
   .recetas img {
     width: 400px;
-    margin: 0 auto;
-    padding: 10px; }
+    margin: 20px;
+    padding-bottom: 10px; }
   .recetas a {
     text-decoration: none;
     color: white; }
   .recetas h6 {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
+
+.presentacion {
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.grid-madre {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "header main" "header main" "footer footer"; }
+  .grid-madre header {
+    grid-area: header; }
+  .grid-madre main {
+    grid-area: main; }
+  .grid-madre footer {
+    grid-area: footer; }
+
+.gridreceta {
+  display: grid;
+  width: 100%;
+  height: none;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: repeat(7 auto);
+  grid-template-areas: none;
+  text-align: center;
+  padding-bottom: 20px; }
+  .gridreceta .imagenreceta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: none;
+    flex-direction: row;
+    width: none;
+    height: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    padding-left: 200px; }
+
+.nav {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  text-align: center;
+  flex-direction: none;
+  width: 100%;
+  height: 100vh;
+  background-repeat: none;
+  background-size: none; }
+  .nav .nav-recetas a {
+    text-align: center;
+    justify-content: center; }
+  .nav .nav-recetas ul a {
+    list-style: none; }
+  .nav .nav-recetas li a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    display: list-item;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; }
+    .nav .nav-recetas li a:hover {
+      color: blueviolet; }
+
+.gridreceta {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+ol {
+  list-style: none; }
+
+ul {
+  list-style: none; }

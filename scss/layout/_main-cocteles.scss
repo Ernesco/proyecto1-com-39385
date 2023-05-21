@@ -1,0 +1,22 @@
+.grid-madre{
+    @include grid(100%,100vh,300px 1fr,100%,"header main""header main""footer footer");
+        header{
+            grid-area: header;
+    }
+        main{
+            grid-area: main;
+    }
+        footer{
+            grid-area: footer;
+    }
+}
+.gridreceta{
+    @include grid(100%,none,repeat(3 1fr), repeat(7 auto),none);
+    text-align: center;    
+    padding-bottom: 20px;
+    .imagenreceta{
+            @include flex(center,space-between,none,row,none,none,no-repeat,cover);
+            width: 80%;
+            padding-left: 200px;
+        }
+}

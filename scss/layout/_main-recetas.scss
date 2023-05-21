@@ -1,13 +1,23 @@
 .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 70vh;
+    @include flex(center,center,center,column,none,70vh,no-repeat,cover);
     background-image: url(https://i.postimg.cc/QN4hX6Jq/sinalcoholbanner1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                @-webkit-keyframes fade-in {
+                    0% {
+                        opacity: 0;                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                @keyframes fade-in {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }  
 }
 .bajo-banner{
     background-image: url(https://i.postimg.cc/y8Jd4qq9/bajobanner1.jpg);
@@ -39,11 +49,11 @@ h3{
     text-shadow: 3px 3px 0 rgb(0, 0, 0);
 }
 .recetas{
-    display: flex;
+    @include grid(100%,none,repeat(3,1fr),repeat(2,1fr),none);
         img{
             width: 400px;
-            margin: 0 auto;
-            padding: 10px;
+            margin: 20px;
+            padding-bottom: 10px;
         }
         a{
             text-decoration: none;
@@ -51,5 +61,44 @@ h3{
         }
         h6{
             text-align: center;
+            padding-bottom: 20px;
         }
+       
 }
+
+.presentacion{
+        -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+        }
+        40% {
+        opacity: 0.6;
+        }
+        100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+        }
+    }
+    @keyframes tracking-in-contract-bck {
+        0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+        }
+        40% {
+        opacity: 0.6;
+        }
+        100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+        }
+    }  

@@ -1,0 +1,55 @@
+.nav{
+    @include flex(none,none,center,none,100%,100vh,none,none);
+        .nav-recetas{
+            a{
+                text-align: center;
+                justify-content: center;
+            }
+            ul a{
+                list-style: none;
+            }
+            li a{
+                text-decoration: none;
+                color: white;
+                margin: 20px;
+                display: list-item;
+                letter-spacing: 2px;
+                padding: 10px;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                    &:hover{
+                        color: blueviolet;
+                    }
+        }
+    }
+}
+.gridreceta{
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+        @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+ol{
+    list-style: none;
+    }
+ul{
+    list-style: none;
+}
+
+
+

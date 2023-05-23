@@ -80,7 +80,7 @@
             }
     }
     .recetas{
-    @include grid(100%,none,repeat(1,1fr),repeat(4,1fr),none);
+    @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
         img{
             width: 300px;
             margin: 10px;
@@ -96,6 +96,9 @@
         }
     }
     .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
-        @include flex(center,center,center,column,none,30vh,no-repeat,cover);
+        @include flex(center,center,center,column,none,40vh,no-repeat,cover);
+}
+.navbar-recetas{
+    display: none;
 }
 }

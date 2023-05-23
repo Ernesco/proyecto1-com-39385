@@ -18,7 +18,8 @@ header{
             margin: 5px;
         }
     }
-    .navbar ul{
+    .navbar, .navbar-recetas{
+        ul{
         display: flex;
         list-style: none;
         li a{
@@ -27,6 +28,7 @@ header{
             padding-right: 20px;
             &:hover{
                 color:blueviolet;
+                }
             }
         }
     }

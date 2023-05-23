@@ -69,4 +69,27 @@
             height: 90px;
         }
     }
+    .recetas{
+        @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
+            img{
+                width: 300px;
+                margin: 10px;
+                padding-bottom: 5px;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            h6{
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
+            @include flex(center,center,center,column,none,40vh,no-repeat,cover);
+    }
+    .navbar-recetas{
+        display: none;
+    }
 }

@@ -27,14 +27,14 @@ header {
       height: 50px;
       align-items: center;
       margin: 5px; }
-  header .navbar ul {
+  header .navbar ul, header .navbar-recetas ul {
     display: flex;
     list-style: none; }
-    header .navbar ul li a {
+    header .navbar ul li a, header .navbar-recetas ul li a {
       text-decoration: none;
       color: white;
       padding-right: 20px; }
-      header .navbar ul li a:hover {
+      header .navbar ul li a:hover, header .navbar-recetas ul li a:hover {
         color: blueviolet; }
 
 .logo-main {
@@ -414,7 +414,37 @@ ul {
   .logo-main {
     height: 60vh; }
     .logo-main img {
-      height: 90px; } }
+      height: 90px; }
+  .recetas {
+    display: grid;
+    width: 100%;
+    height: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: none; }
+    .recetas img {
+      width: 300px;
+      margin: 10px;
+      padding-bottom: 5px;
+      align-items: center; }
+    .recetas a {
+      text-decoration: none;
+      color: white; }
+    .recetas h6 {
+      text-align: center;
+      padding-bottom: 20px; }
+  .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: none;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .navbar-recetas {
+    display: none; } }
 
 @media (max-width: 660px) {
   header {
@@ -474,7 +504,7 @@ ul {
     width: 100%;
     height: none;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: none; }
     .recetas img {
       width: 300px;
@@ -493,9 +523,11 @@ ul {
     text-align: center;
     flex-direction: column;
     width: none;
-    height: 30vh;
+    height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .navbar-recetas {
+    display: none; } }
 
 @media (max-width: 375px) {
   header {
@@ -561,7 +593,7 @@ ul {
     width: 100%;
     height: none;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: none; }
     .recetas img {
       width: 300px;
@@ -580,9 +612,11 @@ ul {
     text-align: center;
     flex-direction: column;
     width: none;
-    height: 30vh;
+    height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .navbar-recetas {
+    display: none; } }
 
 @media (max-width: 320px) {
   header {
@@ -652,7 +686,7 @@ p input {
     width: 100%;
     height: none;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: none; }
     .recetas img {
       width: 300px;
@@ -671,6 +705,8 @@ p input {
     text-align: center;
     flex-direction: column;
     width: none;
-    height: 30vh;
+    height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .navbar-recetas {
+    display: none; } }

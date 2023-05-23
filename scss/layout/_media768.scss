@@ -1,0 +1,72 @@
+@media(max-width:960px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        .logo-nav img{
+            height: 40px;
+        }
+    }
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 40px;
+        height: 60vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 40px;
+        height: 60vh;
+    }
+    .figuras{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+        figure img{
+            height: 300px;
+        }
+        figcaption{
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+    }
+    .novedades p{
+        font-size: 15px;
+        padding: 10px;
+        border: 8px;
+        margin: 0px;
+        form{
+            font-size: 12px;
+            input{
+                font-size: 12px;
+            }
+        }
+    }
+    .enlaces{
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .logo-main{
+        height: 60vh;
+        img{
+            height: 90px;
+        }
+    }
+}

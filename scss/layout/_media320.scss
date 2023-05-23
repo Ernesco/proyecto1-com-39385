@@ -1,3 +1,101 @@
 @media(max-width:320px){
-    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .navbar ul{
+            align-items: center;
+            gap: 40px;
+            font-size: 12px;
+        }
+        .logo-nav img{
+        height: 35px;
+    }
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .boton-ingresar a{
+        padding: 5px;
+        border: 2px;
+        margin: 5px;
+    }
+    .figuras{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-between;
+            figure img{
+                height: 200px;
+            }
+            figcaption{
+                font-size: 8px;
+                padding-bottom: 10px;
+            }
+    }
+    .novedades 
+        p{
+        font-size: 7.9px;
+        padding: 5px;
+        border: 5px;
+        margin: 0px;
+        form{
+            font-size: 10px;
+        } 
+        input{
+            font-size: 10px;
+        }
+    }
+    .enlaces{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .barra{
+        align-items: center;
+        padding-left: 15px;
+        height: 25vh;
+    }
+    .copa-barra{
+        align-items: center;
+        padding-left: 15px;
+        height: 25vh;
+    }
+    .logo-main{
+        height: 30vh;
+            img{
+                height: 50px;
+            }
+    }
+    .recetas{
+    @include grid(100%,none,repeat(1,1fr),repeat(4,1fr),none);
+        img{
+            width: 300px;
+            margin: 10px;
+            padding-bottom: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h6{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
+        @include flex(center,center,center,column,none,30vh,no-repeat,cover);
+}
 }

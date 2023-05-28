@@ -18,18 +18,52 @@ header{
             margin: 5px;
         }
     }
-    .navbar, .navbar-recetas{
+    // .navbar, .navbar-recetas{
+    //     background-color:darkcyan;
+    //     ul{
+    //     display: flex;
+    //     list-style: none;
+    //     li a{
+    //         text-decoration: none;
+    //         color: white;
+    //         padding-right: 20px;
+    //         &:hover{
+    //             color:blueviolet;
+    //             }
+    //         }
+    //     }
+    // }
+    .navbar{
         ul{
-        display: flex;
-        list-style: none;
-        li a{
-            text-decoration: none;
-            color: white;
-            padding-right: 20px;
-            &:hover{
-                color:blueviolet;
+            margin-right: 20px;
+            li{
+                display: inline-block;
+                align-items: center;
+                margin: 0 5px;
+                a{
+                    text-decoration: none;
+                    list-style: none;
+                    color: white;
+                    border-radius: 3px;
+                    padding: 7px 13px;
+                        &:hover{
+                            background-color: blueviolet;
+                            transition: 2s;
+                    }
                 }
             }
         }
+    }
+    .checkbtn{
+        font-size: 20px;
+        color: white;
+        float: right;
+        line-height: 70px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
     }
 }

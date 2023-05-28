@@ -1,17 +1,6 @@
 @media(max-width:320px){
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        .navbar ul{
-            align-items: center;
-            gap: 40px;
-            font-size: 12px;
-        }
         .logo-nav img{
         height: 35px;
-    }
     }
     h1{
         font-size: 30px;
@@ -97,8 +86,5 @@
     }
     .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
         @include flex(center,center,center,column,none,40vh,no-repeat,cover);
-}
-.navbar-recetas{
-    display: none;
-}
+    }
 }

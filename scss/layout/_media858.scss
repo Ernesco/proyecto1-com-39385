@@ -1,0 +1,36 @@
+@media(max-width:858px){
+    header{
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            background-color: rgb(102, 0, 102);
+            top: 70px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s;
+            z-index: 10;
+        }
+        .navbar{
+            ul{
+                li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                    a{
+                        font-size: 20px;
+                        &:hover{
+                            background:none;
+                            color: rgb(255, 0, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

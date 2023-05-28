@@ -27,15 +27,31 @@ header {
       height: 50px;
       align-items: center;
       margin: 5px; }
-  header .navbar ul, header .navbar-recetas ul {
-    display: flex;
-    list-style: none; }
-    header .navbar ul li a, header .navbar-recetas ul li a {
-      text-decoration: none;
-      color: white;
-      padding-right: 20px; }
-      header .navbar ul li a:hover, header .navbar-recetas ul li a:hover {
-        color: blueviolet; }
+  header .navbar ul {
+    margin-right: 20px; }
+    header .navbar ul li {
+      display: inline-block;
+      align-items: center;
+      margin: 0 5px; }
+      header .navbar ul li a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-radius: 3px;
+        padding: 7px 13px; }
+        header .navbar ul li a:hover {
+          background-color: blueviolet;
+          transition: 2s; }
+  header .checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; }
+  header #check {
+    display: none; }
 
 .logo-main {
   display: flex;
@@ -56,17 +72,13 @@ h1 {
   line-height: 1px;
   letter-spacing: 10px;
   margin: 2%;
-  text-align: center;
-  text-transform: lowercase;
-  text-shadow: 5px 5px 0 black; }
+  text-align: center; }
 
 h3 {
   font-size: 40px;
   letter-spacing: 1px;
   text-align: center;
-  margin: 1%;
-  text-transform: lowercase;
-  text-shadow: 3px 3px 0 black; }
+  margin: 1%; }
 
 .barra {
   display: flex;
@@ -121,8 +133,10 @@ p {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 20px; }
-  .figuras .card1:hover, .figuras .card2:hover, .figuras .card3:hover, .figuras .card4:hover {
-    transform: scale(1.1); }
+  .figuras .card1, .figuras .card2, .figuras .card3, .figuras .card4 {
+    animation: linear infinite; }
+    .figuras .card1:hover, .figuras .card2:hover, .figuras .card3:hover, .figuras .card4:hover {
+      transform: scale(1.1) translate(0); }
 
 footer {
   background-color: #0e1011; }
@@ -173,7 +187,7 @@ footer {
     padding-top: 0; }
 
 /* Pages */
-.sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner {
+.sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner, .sugerencias, .contactos, .nosotros, .img-nosotros {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,6 +213,20 @@ footer {
   100% {
     opacity: 1; } }
 
+.img-nosotros {
+  background-image: url(https://i.postimg.cc/ZKWRpmsm/Mas-Mariana-cocteleria-1.jpg);
+  z-index: -1; }
+
+.sugerencias {
+  background-image: url(https://i.postimg.cc/fTVZkxHQ/barra41.jpg);
+  z-index: -1; }
+
+.contactos {
+  background-image: url(https://i.postimg.cc/P5Bqd6h7/barra2.jpg); }
+
+.nosotros {
+  background-image: url(https://i.postimg.cc/yNyC2nNc/barman1.png); }
+
 .bajo-banner {
   background-image: url(https://i.postimg.cc/y8Jd4qq9/bajobanner1.jpg); }
 
@@ -216,17 +244,13 @@ h1 {
   line-height: 1px;
   letter-spacing: 10px;
   margin: 2%;
-  text-align: center;
-  text-transform: lowercase;
-  text-shadow: 5px 5px 0 black; }
+  text-align: center; }
 
 h3 {
   font-size: 40px;
   letter-spacing: 1px;
   text-align: center;
-  margin: 1%;
-  text-transform: lowercase;
-  text-shadow: 3px 3px 0 black; }
+  margin: 1%; }
 
 .recetas {
   display: grid;
@@ -276,6 +300,9 @@ h3 {
     transform: translateZ(0);
     opacity: 1; } }
 
+.txt-nosotros {
+  font-size: 50px; }
+
 .grid-madre {
   display: grid;
   width: 100%;
@@ -314,7 +341,7 @@ h3 {
 
 .nav {
   display: flex;
-  align-items: none;
+  align-items: center;
   justify-content: none;
   text-align: center;
   flex-direction: none;
@@ -322,12 +349,12 @@ h3 {
   height: 100vh;
   background-repeat: none;
   background-size: none; }
-  .nav .nav-recetas a {
+  .nav .navbar-recetas a {
     text-align: center;
     justify-content: center; }
-  .nav .nav-recetas ul a {
+  .nav .navbar-recetas ul a {
     list-style: none; }
-  .nav .nav-recetas li a {
+  .nav .navbar-recetas li a {
     text-decoration: none;
     color: white;
     margin: 20px;
@@ -336,8 +363,8 @@ h3 {
     padding: 10px;
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
-    .nav .nav-recetas li a:hover {
-      color: blueviolet; }
+    .nav .navbar-recetas li a:hover {
+      color: hwb(271 17% 11%); }
 
 .gridreceta {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -363,12 +390,18 @@ ul {
 
 /* Media */
 @media (max-width: 960px) {
-  header {
-    flex-direction: row;
+  .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner {
+    display: flex;
     align-items: center;
-    font-size: 12px; }
-    header .logo-nav img {
-      height: 40px; }
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: none;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  header {
+    padding-left: 20px; }
   h1 {
     font-size: 80px; }
   h2 {
@@ -419,8 +452,8 @@ ul {
     display: grid;
     width: 100%;
     height: none;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: none; }
     .recetas img {
       width: 300px;
@@ -432,27 +465,39 @@ ul {
       color: white; }
     .recetas h6 {
       text-align: center;
-      padding-bottom: 20px; }
-  .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      padding-bottom: 20px; } }
+
+@media (max-width: 858px) {
+  header .checkbtn {
+    display: block; }
+  header ul {
+    position: fixed;
+    width: 100%;
+    background-color: #660066;
+    top: 70px;
+    left: 100%;
     text-align: center;
-    flex-direction: column;
-    width: none;
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .navbar-recetas {
-    display: none; } }
+    transition: all 0.5s;
+    z-index: 10; }
+  header .navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; }
+    header .navbar ul li a {
+      font-size: 20px; }
+      header .navbar ul li a:hover {
+        background: none;
+        color: magenta; }
+  #check:checked ~ ul {
+    left: 0; } }
 
 @media (max-width: 660px) {
-  header {
-    flex-direction: row;
-    align-items: center;
-    font-size: 12px; }
-    header .logo-nav img {
-      height: 40px; }
+  header .navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; }
+    header .navbar ul li a {
+      font-size: 12px; }
   h1 {
     font-size: 40px; }
   h2 {
@@ -503,8 +548,8 @@ ul {
     display: grid;
     width: 100%;
     height: none;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: none; }
     .recetas img {
       width: 300px;
@@ -525,21 +570,9 @@ ul {
     width: none;
     height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; }
-  .navbar-recetas {
-    display: none; } }
+    background-size: cover; } }
 
 @media (max-width: 375px) {
-  header {
-    flex-direction: column;
-    align-items: center; }
-    header .navbar {
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      font-size: 12px; }
-    header .logo-nav img {
-      height: 35px; }
   h1 {
     font-size: 30px; }
   h2 {
@@ -596,7 +629,7 @@ ul {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: none; }
     .recetas img {
-      width: 300px;
+      width: 500px;
       margin: 10px;
       padding-bottom: 5px; }
     .recetas a {
@@ -614,22 +647,11 @@ ul {
     width: none;
     height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; }
-  .navbar-recetas {
-    display: none; } }
+    background-size: cover; } }
 
 @media (max-width: 320px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    header .navbar ul {
-      align-items: center;
-      gap: 40px;
-      font-size: 12px; }
-    header .logo-nav img {
-      height: 35px; }
+  .logo-nav img {
+    height: 35px; }
   h1 {
     font-size: 30px; }
   h2 {
@@ -707,6 +729,4 @@ p input {
     width: none;
     height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover; }
-  .navbar-recetas {
-    display: none; } }
+    background-size: cover; } }

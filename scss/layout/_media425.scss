@@ -1,14 +1,21 @@
 @media(max-width:660px){
+    
     header{
-        flex-direction: row;
-        align-items: center;
-        font-size: 12px;
-        .logo-nav img{
-            height: 40px;
+        .navbar{
+            ul{
+                li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                    a{
+                        font-size: 12px;
+                }            
+            }                
         }
     }
+}
     h1{
-        font-size: 40px;
+    font-size: 40px;
     }
     h2{
         font-size: 20px;
@@ -72,7 +79,7 @@
         }
 }
 .recetas{
-    @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
+    @include grid(100%,none,repeat(2,1fr),repeat(3,1fr),none);
         img{
             width: 300px;
             margin: 10px;
@@ -89,8 +96,5 @@
     }
     .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
         @include flex(center,center,center,column,none,40vh,no-repeat,cover);
-}
-.navbar-recetas{
-    display: none;
 }
 }

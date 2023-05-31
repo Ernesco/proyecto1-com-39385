@@ -21,11 +21,9 @@
 }
 .img-nosotros{
     background-image: url(https://i.postimg.cc/ZKWRpmsm/Mas-Mariana-cocteleria-1.jpg);
-    z-index: -1;
 }
 .sugerencias{
     background-image: url(https://i.postimg.cc/fTVZkxHQ/barra41.jpg);
-    z-index: -1;
 }
 .contactos{
     background-image: url(https://i.postimg.cc/P5Bqd6h7/barra2.jpg);
@@ -60,19 +58,40 @@ h3{
 }
 .recetas{
     @include grid(100%,none,repeat(3,1fr),repeat(2,1fr),none);
+    .img1{
+        background-image: $color-recetas;
+        a{
+            text-decoration: none;
+            color: white;
         img{
             width: 400px;
             margin: 20px;
             padding-bottom: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        h6{
+            }
+        h6, h2{
             text-align: center;
             padding-bottom: 20px;
-        }   
+            }
+        } 
+    }
+    .img2{
+        @extend .img1;
+    }
+    .img3{
+        @extend .img1;
+    }
+    .img4{
+        @extend .img1;
+    }
+    .img5{
+        @extend .img1;
+    }
+    .img6{
+        @extend .img1;
+    }
+    .img7{
+        @extend .img1;
+    }      
 }
 
 .presentacion{

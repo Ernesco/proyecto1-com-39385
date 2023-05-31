@@ -5,7 +5,8 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: #0e1011;
+    background-color: $background-secundario;
+    z-index: 1;
     div a{
         display: flex;
         align-items: center;
@@ -47,7 +48,7 @@ header{
                     border-radius: 3px;
                     padding: 7px 13px;
                         &:hover{
-                            background-color: blueviolet;
+                            background-color: $color-hover-header;
                             transition: 2s;
                     }
                 }

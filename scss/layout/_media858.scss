@@ -5,25 +5,25 @@
         }
         ul{
             position: fixed;
-            width: 100%;
-            background-color: rgb(102, 0, 102);
-            top: 70px;
-            left: 100%;
+            width: 50%;
+            background-color: #06215c;
+            top: 80px;
+            left:100%;
             text-align: center;
             transition: all 0.5s;
-            z-index: 10;
         }
         .navbar{
             ul{
                 li{
                     display: block;
-                    margin: 50px 0;
-                    line-height: 30px;
+                    margin: 20px 0;
+                    line-height: 20px;
                     a{
-                        font-size: 20px;
+                        font-size: 16px;
+                        padding: 2px;
                         &:hover{
                             background:none;
-                            color: rgb(255, 0, 255);
+                            color: #002f96;
                         }
                     }
                 }
@@ -31,6 +31,25 @@
         }
     }
     #check:checked ~ ul{
-        left: 0;
+        left: 50%;
+    }
+    .recetas{
+        @include grid(100%,none,repeat(2,1fr),repeat(3,1fr),none);
+            img{
+                width: 360px;
+                margin: 10px;
+                padding-bottom: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            h6{
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
+            @include flex(center,center,center,column,none,40vh,no-repeat,cover);
     }
 }

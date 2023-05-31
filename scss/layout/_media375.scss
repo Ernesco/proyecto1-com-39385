@@ -1,17 +1,17 @@
 @media(max-width:375px){
-    header{
-        // flex-direction: column;
-        // align-items: center;
-        // .navbar{
-        //     flex-direction: column;
-        //     align-items: center;
-        //     gap: 40px;
-        //     font-size: 12px;
-        // }
-        // .logo-nav img{
-        //     height: 35px;
-        // }
-    }
+    // header{
+    //     flex-direction: column;
+    //     align-items: center;
+    //     .navbar{
+    //         flex-direction: column;
+    //         align-items: center;
+    //         gap: 40px;
+    //         font-size: 12px;
+    //     }
+    //     .logo-nav img{
+    //         height: 35px;
+    //     }
+    // }
     h1{
         font-size: 30px;
     }
@@ -79,9 +79,9 @@
         }
     }
     .recetas{
-        @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
+        @include grid(100%,none,auto,repeat(6,1fr),none);
             img{
-                width: 500px;
+                width: 350px;
                 margin: 10px;
                 padding-bottom: 5px;
             }
@@ -90,7 +90,7 @@
                 color: white;
             }
             h6{
-                text-align: center;
+                
                 padding-bottom: 20px;
             }
         }

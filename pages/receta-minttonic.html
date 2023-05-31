@@ -11,36 +11,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="grid-madre">
-        <header>
-            <div class="nav">
-                <div class="nav-recetas">
-                        <a href="../index.html"><img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
-                        <h5>Boulebard <br> Receta de Cocteles</h5></a>
-                    <nav>
-                        <ul>
-                            <li><a href="./cocteleria.html">Kits de Cocteleria</a></li>
-                            <li><a href="./sin-alcohol.html">Coctel Sin Alcohol</a></li>
-                            <li><a href="./alcohol-bajo.html">Coctel Alcohol Bajo</a></li>
-                            <li><a href="./alcohol-medio.html">Coctel Alcohol Medio</a></li>
-                            <li><a href="./alcohol-alto.html">Coctel Alcohol Alto</a></li>
-                        </ul>    
-                    </nav>
-                    <img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
-                </div>
-            </div>    
-        </header>
+    <header>
+        <div class="logo-nav">
+            <a href="../index.html"><img src="https://i.postimg.cc/ZKnYpk5g/logo.png" alt="Logo">
+            <h5>Boulebard <br> Receta de Cocteles</h5></a>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <ul>
+                <li><a href="./cocteleria.html">Kits de Cocteleria</a></li>
+                <li><a href="./sin-alcohol.html">Sin Alcohol</a></li>
+                <li><a href="./alcohol-bajo.html">Alcohol Bajo</a></li>
+                <li><a href="./alcohol-medio.html">Alcohol Medio</a></li>
+                <li><a href="./alcohol-alto.html">Alcohol Alto</a></li>
+            </ul>
+        </nav>
+    </header>
         <Main>
-            <div class="gridreceta">
+            <div class="fondo">
+            <div class="recetas-txt">
                 <h2 class="grid-subtitulo">Mint Tonic</h2>
-                <img src="https://i.postimg.cc/Pqsg4Vfv/minttonicreceta3.jpg" alt="Mint Tonic" class="imagenreceta">
-                <p class="grid-parrafo1"><br><strong>Ingredientes para 1 cóctel:</strong></p>
-                <p class="grid-parrafo2"><strong>Metodo:</strong> Directo en el vaso</p>    
-                <p class="grid-parrafo3"><strong>ingredientes:</strong></p>
-                    <ul class="grid-lista1">
+                <img src="https://i.postimg.cc/Pqsg4Vfv/minttonicreceta3.jpg" alt="Mint Tonic">
+                <p><br><strong>Ingredientes para 1 cóctel:</strong></p>
+                <p><strong>Metodo:</strong> Directo en el vaso</p>    
+                <p><strong>ingredientes:</strong></p>
+                    <ul>
                         <li>4 hojas de menta fresca</li>
                         <li>1 cl de almíbar</li>
                         <li>Hielo</li>
@@ -48,14 +50,15 @@
                         <li>6 cl de zumo de lima o limón</li>
                         <li>Tónica</li>
                     </ul>
-                <p class="grid-parrafo4"><strong>Preparacion</strong></p>
-                    <ol class="grid-lista2">
+                <p><strong>Preparacion</strong></p>
+                    <ol>
                         <li>CAplasta las hojas de menta con el almíbar en un vaso alto</li>  
                         <li>UAñade algunos cubitos de hielo, el jarabe de menta y el zumo de limón.</li> 
                         <li>Remúeve bien y rellena con tónica.</li> 
                         <li>Vuelve a remover y decora con unas rodajas de lima o limón y menta.</li>
                     </ol>
             </div>
+        </div>
         </Main>
         <footer>
             <hr>

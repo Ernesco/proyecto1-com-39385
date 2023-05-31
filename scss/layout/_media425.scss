@@ -1,12 +1,11 @@
 @media(max-width:660px){
-    
     header{
         .navbar{
             ul{
                 li{
                     display: block;
-                    margin: 50px 0;
-                    line-height: 30px;
+                    margin: 20px 0;
+                    line-height: 20px;
                     a{
                         font-size: 12px;
                 }            
@@ -79,9 +78,9 @@
         }
 }
 .recetas{
-    @include grid(100%,none,repeat(2,1fr),repeat(3,1fr),none);
+    @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
         img{
-            width: 300px;
+            width: 400px;
             margin: 10px;
             padding-bottom: 5px;
         }

@@ -1,0 +1,44 @@
+@media(max-width: 1024px){
+    header{
+        padding-left: 20px;
+            .navbar{
+                ul{
+                    font-size: 13px;
+                    margin-right:0;
+                    padding: 0;
+            }
+        }
+    }
+    .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner, .sugerencias, .contactos, .nosotros, .img-nosotros{
+        @include flex(center,center,center,column,none,60vh,no-repeat,cover);
+        h1{
+            font-size: 100px;
+        }
+        h3{
+            font-size: 30px;
+        }
+    }
+        .recetas{
+            .img1,.img2,.img3,.img4,.img5,.img6,.img7{
+                a{
+                img{
+                    width: 250px;
+                    margin-left: 60px;
+                    padding-bottom: 5px;
+                }
+                h2{
+                    font-size: 16px;
+                    text-align: center;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+    .fondo{
+        .recetas-txt{
+            img{
+                width: 500px;
+            }
+        }
+    }
+}

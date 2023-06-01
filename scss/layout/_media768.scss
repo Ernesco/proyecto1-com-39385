@@ -1,14 +1,37 @@
-@media(max-width:960px){
+@media(max-width:768px){
     header{
-        padding-left: 20px;
-            .navbar{
-                ul{
-                    font-size: 12px;
-                    margin-right:0;
-                    padding: 0;
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 50%;
+            background-color: #06215c;
+            top: 80px;
+            left:100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        .navbar{
+            ul{
+                li{
+                    display: block;
+                    margin: 20px 0;
+                    line-height: 20px;
+                    a{
+                        font-size: 16px;
+                        padding: 2px;
+                        &:hover{
+                            background:none;
+                            color: #002f96;
+                        }
+                    }
                 }
             }
-
+        }
+    }
+    #check:checked ~ ul{
+        left: 50%;
     }
     h1{
         font-size: 80px;
@@ -42,14 +65,18 @@
         flex-direction: column;
         text-align: center;
         justify-content:space-between;
-        figure img{
+        .card1,.card2,.card3,.card4{
+        a{    
+        img{
             height: 300px;
         }
-        figcaption{
+        p{
             font-size: 12px;
             padding-bottom: 10px;
+            }
         }
     }
+}    
     .novedades p{
         font-size: 15px;
         padding: 10px;
@@ -77,6 +104,16 @@
             
     }
         .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
-            @include flex(center,center,center,column,none,40vh,no-repeat,cover);
+            @include flex(center,center,center,column,none,50vh,no-repeat,cover);
+            h1{
+                font-size: 80px;
+            }
     }
+    .fondo{
+    .recetas-txt{
+        img{
+            width: 400px;
+        }
+    }
+}
 }

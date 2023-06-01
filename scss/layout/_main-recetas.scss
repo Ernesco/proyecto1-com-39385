@@ -49,49 +49,32 @@ h1{
     letter-spacing: 10px;
     margin: 2%;
     text-align: center;
+    text-shadow: 2px 1px black;
 }
 h3{
     font-size: 40px;
     letter-spacing: 1px;
     text-align: center;
     margin: 1%;
+    text-shadow: 2px 1px black;
 }
 .recetas{
     @include grid(100%,none,repeat(3,1fr),repeat(2,1fr),none);
-    .img1{
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7{
         background-image: $color-recetas;
         a{
             text-decoration: none;
             color: white;
         img{
             width: 400px;
-            margin: 20px;
-            padding-bottom: 10px;
+            
             }
         h6, h2{
             text-align: center;
             padding-bottom: 20px;
             }
         } 
-    }
-    .img2{
-        @extend .img1;
-    }
-    .img3{
-        @extend .img1;
-    }
-    .img4{
-        @extend .img1;
-    }
-    .img5{
-        @extend .img1;
-    }
-    .img6{
-        @extend .img1;
-    }
-    .img7{
-        @extend .img1;
-    }      
+    }   
 }
 
 .presentacion{

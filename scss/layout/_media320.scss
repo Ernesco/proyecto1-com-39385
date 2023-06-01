@@ -23,29 +23,25 @@
         margin: 5px;
     }
     .figuras{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content:space-between;
-            figure img{
-                height: 200px;
+        .card1,.card2,.card3,.card4{
+            img{
+                width: 200px
             }
-            figcaption{
-                font-size: 8px;
+            p{
+                font-size: 12px;
                 padding-bottom: 10px;
             }
+        }
     }
-    .novedades 
-        p{
-        font-size: 7.9px;
-        padding: 5px;
-        border: 5px;
-        margin: 0px;
+    .novedades{ 
+        .nov{
+        font-size: 7px;
+        }
         form{
-            font-size: 10px;
+            font-size: 8px;
         } 
         input{
-            font-size: 10px;
+            font-size: 8px;
         }
     }
     .enlaces{
@@ -70,21 +66,44 @@
     }
     .recetas{
     @include grid(100%,none,repeat(1,1fr),repeat(6,1fr),none);
-        img{
-            width: 300px;
-            margin: 10px;
-            padding-bottom: 5px;
-        }
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7{
         a{
-            text-decoration: none;
-            color: white;
+        img{
+                margin-left: 40px;
+            }
         }
-        h6{
-            text-align: center;
-            padding-bottom: 20px;
-        }
+    }
     }
     .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner{
         @include flex(center,center,center,column,none,40vh,no-repeat,cover);
+        h1{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+    .fondo{
+        .recetas-txt{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            align-items: center;
+            img{
+                width: 250px;
+            }
+            p{
+                font-size: 11px;
+            }
+            li{
+                font-size: 10px;
+            }
+        }
+    }
+    .beber{
+        p{
+            font-size: 9px;
+        }
     }
 }
+

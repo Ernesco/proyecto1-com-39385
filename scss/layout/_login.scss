@@ -1,0 +1,40 @@
+form{
+    margin: 40px;
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: $background-secundario;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 20px;
+        .login{
+            margin-bottom: 15px;
+            input{
+            font-size: 16px;
+            padding: 5px;
+            }
+            .boton{
+                border: none;
+                width: 120%;
+                color: white;
+                font-size: 16px;
+                background-color: $button-color;
+                padding: 12px 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                    &:hover{
+                        background-color: $cambio-hover;
+                    }
+            }
+        }
+        .link{
+            text-decoration: none;
+            color: $link-color;
+            font-weight: 200;
+        }
+    }
+}

@@ -189,6 +189,74 @@ footer {
     margin-top: 0;
     padding-top: 0; }
 
+form {
+  margin: 40px; }
+  form .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #0e1011;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 20px; }
+    form .form .login {
+      margin-bottom: 15px; }
+      form .form .login input {
+        font-size: 16px;
+        padding: 5px; }
+      form .form .login .boton {
+        border: none;
+        width: 120%;
+        color: white;
+        font-size: 16px;
+        background-color: #0a3d62;
+        padding: 12px 18px;
+        border-radius: 5px;
+        cursor: pointer; }
+        form .form .login .boton:hover {
+          background-color: darkcyan; }
+    form .form .link {
+      text-decoration: none;
+      color: #ff5252;
+      font-weight: 200; }
+
+form {
+  margin: 40px; }
+  form .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #0e1011;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 20px; }
+    form .form .registrar {
+      margin-bottom: 15px; }
+      form .form .registrar input {
+        font-size: 16px;
+        padding: 5px; }
+      form .form .registrar .boton {
+        border: none;
+        width: 120%;
+        color: white;
+        font-size: 16px;
+        background-color: #0a3d62;
+        padding: 12px 18px;
+        border-radius: 5px;
+        cursor: pointer; }
+        form .form .registrar .boton:hover {
+          background-color: darkcyan; }
+    form .form .link {
+      text-decoration: none;
+      color: #ff5252;
+      font-weight: 200; }
+
 /* Pages */
 .sin-alcohol-banner, .bajo-banner, .medio-banner, .alto-banner, .herramientas-banner, .sugerencias, .contactos, .nosotros, .img-nosotros {
   display: flex;

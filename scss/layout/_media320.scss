@@ -105,5 +105,20 @@
             font-size: 9px;
         }
     }
+    form{
+        .form{
+            .login, .registrar{
+                margin-bottom: 5px;
+                input{
+                    font-size: 14px;
+                    padding: 1px;
+                }
+                .boton{
+                    font-size: 10px;
+                    padding: 8px 14px;
+                }
+            }
+        }
+    }
 }
 

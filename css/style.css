@@ -100,11 +100,16 @@ h3 {
   padding: 10px; }
 
 .boton-ingresar a {
-  padding: 10px;
-  border: 5px;
-  margin: 10px;
-  text-decoration: none;
-  color: black; }
+  border: none;
+  width: 120%;
+  color: white;
+  font-size: 16px;
+  background-color: #0a3d62;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer; }
+  .boton-ingresar a:hover {
+    background-color: darkcyan; }
 
 .copa-barra {
   display: flex;
@@ -612,7 +617,10 @@ h3 {
     .fondo .recetas-txt p {
       font-size: 14px; }
     .fondo .recetas-txt li {
-      font-size: 14px; } }
+      font-size: 14px; }
+  form .form {
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 @media (max-width: 375px) {
   h1 {
@@ -678,7 +686,19 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover; }
     .sin-alcohol-banner h1, .bajo-banner h1, .medio-banner h1, .alto-banner h1, .herramientas-banner h1 {
-      font-size: 40px; } }
+      font-size: 40px; }
+  form .form {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 10px; }
+    form .form .login, form .form .registrar {
+      margin-bottom: 10px; }
+      form .form .login input, form .form .registrar input {
+        font-size: 12ps;
+        padding: 2px; }
+      form .form .login .boton, form .form .registrar .boton {
+        font-size: 12px;
+        padding: 10px 16px; } }
 
 @media (max-width: 320px) {
   .logo-nav img {
@@ -758,4 +778,12 @@ h3 {
     .fondo .recetas-txt li {
       font-size: 10px; }
   .beber p {
-    font-size: 9px; } }
+    font-size: 9px; }
+  form .form .login, form .form .registrar {
+    margin-bottom: 5px; }
+    form .form .login input, form .form .registrar input {
+      font-size: 14px;
+      padding: 1px; }
+    form .form .login .boton, form .form .registrar .boton {
+      font-size: 10px;
+      padding: 8px 14px; } }
